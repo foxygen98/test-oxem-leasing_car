@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/test-oxem-leasing_car/static/css/main.78f03c04.chunk.css",
+    "main.js": "/test-oxem-leasing_car/static/js/main.bd4c4fb2.chunk.js",
+    "main.js.map": "/test-oxem-leasing_car/static/js/main.bd4c4fb2.chunk.js.map",
+    "runtime-main.js": "/test-oxem-leasing_car/static/js/runtime-main.367ba619.js",
+    "runtime-main.js.map": "/test-oxem-leasing_car/static/js/runtime-main.367ba619.js.map",
+    "static/js/2.069f3e57.chunk.js": "/test-oxem-leasing_car/static/js/2.069f3e57.chunk.js",
+    "static/js/2.069f3e57.chunk.js.map": "/test-oxem-leasing_car/static/js/2.069f3e57.chunk.js.map",
+    "static/js/3.1d7b2e2c.chunk.js": "/test-oxem-leasing_car/static/js/3.1d7b2e2c.chunk.js",
+    "static/js/3.1d7b2e2c.chunk.js.map": "/test-oxem-leasing_car/static/js/3.1d7b2e2c.chunk.js.map",
+    "index.html": "/test-oxem-leasing_car/index.html",
+    "static/css/main.78f03c04.chunk.css.map": "/test-oxem-leasing_car/static/css/main.78f03c04.chunk.css.map",
+    "static/js/2.069f3e57.chunk.js.LICENSE.txt": "/test-oxem-leasing_car/static/js/2.069f3e57.chunk.js.LICENSE.txt",
+    "static/media/App.module.css": "/test-oxem-leasing_car/static/media/Nekst-Black.7f094525.svg",
+    "static/media/Banner.module.css": "/test-oxem-leasing_car/static/media/banner-image.9ec56ce4.jpeg",
+    "static/media/left-arrow.649b6284.svg": "/test-oxem-leasing_car/static/media/left-arrow.649b6284.svg",
+    "static/media/logo-black.8dd727a7.svg": "/test-oxem-leasing_car/static/media/logo-black.8dd727a7.svg",
+    "static/media/logo-white.868b488b.svg": "/test-oxem-leasing_car/static/media/logo-white.868b488b.svg",
+    "static/media/menu-button-white.4041f38a.svg": "/test-oxem-leasing_car/static/media/menu-button-white.4041f38a.svg",
+    "static/media/menu-button.5cae4b6d.svg": "/test-oxem-leasing_car/static/media/menu-button.5cae4b6d.svg",
+    "static/media/menu-close-button.094e52ef.svg": "/test-oxem-leasing_car/static/media/menu-close-button.094e52ef.svg",
+    "static/media/right-arrow.3e00b1cd.svg": "/test-oxem-leasing_car/static/media/right-arrow.3e00b1cd.svg",
+    "static/media/tg-icon.00a690a0.svg": "/test-oxem-leasing_car/static/media/tg-icon.00a690a0.svg",
+    "static/media/whatsapp-icon.977dec80.svg": "/test-oxem-leasing_car/static/media/whatsapp-icon.977dec80.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.367ba619.js",
+    "static/js/2.069f3e57.chunk.js",
+    "static/css/main.78f03c04.chunk.css",
+    "static/js/main.bd4c4fb2.chunk.js"
+  ]
+}
