@@ -1,0 +1,42 @@
+@import url('./stylesConstants.css');
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Regular.eot');
+  src: local('☺'), url('../fonts/Gilroy-Regular.woff') format('woff'),
+    url('../fonts/Gilroy-Regular.ttf') format('truetype'), url('../fonts/Gilroy-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Bold.eot');
+  src: local('☺'), url('../fonts/Gilroy-Bold.woff') format('woff'), url('../fonts/Gilroy-Bold.ttf') format('truetype'),
+    url('../fonts/Gilroy-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nekst-Black';
+  src: url('../fonts/Nekst-Black.eot');
+  src: local('☺'), url('../fonts/Nekst-Black.woff') format('woff'), url('../fonts/Nekst-Black.ttf') format('truetype'),
+    url('../fonts/Nekst-Black.svg') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+.App {
+  background-color: var(--bgc);
+}
+
+.Container {
+  padding: 0px 48px;
+}
+
+@media (max-width: 768px) {
+  .Container {
+    padding: 0px 20px;
+  }
+}

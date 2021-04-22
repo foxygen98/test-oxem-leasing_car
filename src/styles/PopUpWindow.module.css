@@ -1,0 +1,297 @@
+@import url('./stylesConstants.css');
+
+.Wrapper {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 600;
+}
+
+.PopUpContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 210px;
+  width: 100vw;
+  height: calc(100vh - 210px);
+  background-color: var(--bgc);
+  border-radius: 32px 32px 0px 0px;
+  animation: slideIn ease 1s;
+  -webkit-animation: slideIn ease 1s;
+  -moz-animation: slideIn ease 1s;
+  -o-animation: slideIn ease 1s;
+  -ms-animation: slideIn ease 1s;
+}
+
+@keyframes slideIn {
+  0% {
+    bottom: -1000px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+@-moz-keyframes slideIn {
+  0% {
+    bottom: -1000px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    bottom: -1000px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+@-o-keyframes slideIn {
+  0% {
+    bottom: -1000px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+@-ms-keyframes slideIn {
+  0% {
+    bottom: -1000px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+.Close {
+  position: relative;
+  top: 48px;
+  right: 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--hover-nav);
+  margin-left: auto;
+  cursor: pointer;
+  opacity: 0.7;
+  outline: none;
+}
+
+.Close:hover {
+  opacity: 1;
+}
+
+.Close:before,
+.Close:after {
+  position: absolute;
+  left: 23px;
+  top: 15px;
+  content: ' ';
+  height: 19px;
+  width: 2px;
+  background-color: #828282;
+}
+
+.Close:before {
+  transform: rotate(45deg);
+}
+
+.Close:after {
+  transform: rotate(-45deg);
+}
+
+.FormContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 112px;
+}
+
+.Title {
+  font-family: 'Nekst-Black';
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 90%;
+  margin-bottom: 24px;
+  color: var(--black);
+}
+
+.Subtitle {
+  font-family: 'Gilroy';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 44px;
+  width: 466px;
+  color: var(--grey);
+}
+
+.InputFields {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.InputField {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 16px;
+  margin-right: 33px;
+  overflow: hidden;
+  height: 48px;
+  background-color: var(--hover-nav);
+  border: 1px solid var(--hover-nav);
+}
+
+.InputField:last-child {
+  margin-right: 0;
+}
+
+.InputFieldFocus::before,
+.InputField::before {
+  content: attr(data-title);
+  position: absolute;
+  top: 8px;
+  left: 24px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 120%;
+  margin-right: 24px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--gray);
+}
+
+.InputFieldFocus {
+  border: 1px solid var(--orange);
+  box-shadow: 0 0 0 4px var(--orange-opacity-2);
+}
+
+.Input {
+  border: none;
+  outline: none;
+  width: 311px;
+  padding-left: 24px;
+  font-family: 'Gilroy';
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--grey);
+  background-color: inherit;
+}
+
+.Request {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 655px;
+  height: 100px;
+  border: 2px solid #f3f3f4;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+.RequestInfo {
+  font-family: 'Gilroy';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(17, 17, 17, 0.5);
+  margin-left: 33px;
+  width: 351px;
+}
+
+.RequestButton {
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  border-radius: 40px;
+  outline: none;
+  color: var(--bgc);
+  font-family: 'Gilroy';
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 24px;
+  cursor: pointer;
+  margin-right: 23px;
+}
+
+.SocialNet {
+  display: flex;
+  justify-content: center;
+}
+
+.SocialIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #e7e7e7;
+  border-radius: 50%;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.SocialIcon:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .FormContainer {
+    width: 300px;
+    align-items: center;
+  }
+
+  .Text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Title {
+    width: 280px;
+    font-size: 22px;
+    line-height: 20px;
+  }
+
+  .Subtitle {
+    width: 241px;
+    font-size: 14px;
+    line-height: 136%;
+  }
+
+  .InputFields {
+    flex-direction: column;
+  }
+
+  .InputField {
+    width: 280px;
+    margin-left: 20px;
+    margin-bottom: 8px;
+  }
+
+  .Request {
+    flex-direction: column;
+    border: none;
+  }
+
+  .RequestInfo {
+    order: 1;
+    width: 280px;
+    margin-bottom: 24px;
+    margin: 0;
+  }
+
+  .RequestButton {
+    margin: 0;
+    width: 280px;
+    order: 0;
+    margin-bottom: 16px;
+  }
+}

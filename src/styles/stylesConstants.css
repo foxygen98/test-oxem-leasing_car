@@ -1,0 +1,9 @@
+:root {
+  --bgc: #fff;
+  --grey: #575757;
+  --orange: #ff9514;
+  --orange-opacity-2: rgba(255, 149, 20, 0.2);
+  --input-bgc: #f3f3f4;
+  --black: #111;
+  --hover-nav: #f3f3f4;
+}

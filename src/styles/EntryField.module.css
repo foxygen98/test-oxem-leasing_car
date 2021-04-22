@@ -1,0 +1,143 @@
+@import url('./stylesConstants.css');
+
+.FieldTitle {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--grey);
+  margin-bottom: 24px;
+}
+
+.NumberInput {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  width: 427px;
+  height: 68px;
+  color: var(--grey);
+  background-color: var(--input-bgc);
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  padding-left: 24px;
+}
+
+.PercentInput::-webkit-outer-spin-button,
+.PercentInput::-webkit-inner-spin-button,
+.NumberInput::-webkit-outer-spin-button,
+.NumberInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.PercentInput,
+.NumberInput {
+  font-family: 'Nekst-Black';
+  -moz-appearance: textfield;
+}
+
+.PercentContainer,
+.MeasureContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+  height: 68px;
+  bottom: 68px;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--grey);
+}
+
+.PercentContainer::after {
+  content: '%';
+  position: absolute;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 120%;
+  margin-right: 24px;
+}
+
+.MeasureContainer {
+  font-family: 'Nekst-Black';
+  padding-right: 24px;
+  width: 100px;
+}
+
+.PercentInput {
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  padding: 15px 27px 15px 17px;
+  margin: 10px;
+  background-color: #ebebec;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--grey);
+}
+
+.RangeInput {
+  -webkit-appearance: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 70px;
+  left: 24px;
+  width: 379px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--orange) 0%, #e1e1e1 0%);
+  opacity: 0.8;
+}
+
+.RangeInput:hover {
+  opacity: 1;
+}
+
+.RangeInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--orange);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.RangeInput::-moz-range-track {
+  outline: none;
+  outline-offset: 0;
+}
+
+.RangeInput::-moz-range-thumb {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--orange);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .NumberInput {
+    width: 100%;
+  }
+
+  .RangeInput {
+    width: calc(100% - 48px);
+  }
+}
+
+@media (max-width: 768px) {
+  .FieldTitle {
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,171 @@
+.Wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 550;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
+}
+
+.Menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgc);
+  z-index: 600;
+  margin-left: 439px;
+  border-radius: 32px 0px 0px 0px;
+  padding-top: 24px;
+  height: 1680px;
+  animation: slideIn ease 1s;
+  -webkit-animation: slideIn ease 1s;
+  -moz-animation: slideIn ease 1s;
+  -o-animation: slideIn ease 1s;
+  -ms-animation: slideIn ease 1s;
+}
+
+@keyframes slideIn {
+  0% {
+    right: -300px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@-moz-keyframes slideIn {
+  0% {
+    right: -300px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    right: -300px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@-o-keyframes slideIn {
+  0% {
+    right: -300px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@-ms-keyframes slideIn {
+  0% {
+    right: -300px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+.MenuCloseButton {
+  margin-left: auto;
+  margin-bottom: 8px;
+  margin-right: 32px;
+  cursor: pointer;
+}
+
+.DropDown {
+  margin-bottom: 32px;
+}
+
+.Link {
+  width: 120px;
+  text-decoration: none;
+  color: var(--grey);
+  padding: 6px 16px;
+  font-family: 'Gilroy';
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 32px;
+  flex-grow: 1;
+}
+
+.Link:last-child {
+  margin-bottom: 0;
+}
+
+.LinkList {
+  display: flex;
+  flex-direction: column;
+}
+
+.DropDown:hover .DropDownMenu {
+  display: flex;
+}
+
+.DropDownMenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  left: 15px;
+  width: 243px;
+  background-color: #fff;
+  border: 1px solid var(--hover-nav);
+  box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 14px 24px rgba(51, 51, 51, 0.12);
+  border-radius: 15px;
+  color: var(--black);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.DropDownMenuLink {
+  text-decoration: none;
+  font-weight: normal;
+  font-family: 'Gilroy';
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--black);
+  padding: 8px 16px;
+}
+
+.DropDownMenuLink:hover {
+  background-color: var(--hover-nav);
+}
+
+.RequestButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.RequestButton {
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  border-radius: 40px;
+  outline: none;
+  color: var(--bgc);
+  font-family: 'Gilroy';
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 24px;
+  cursor: pointer;
+  margin-top: calc(100vh - 292px);
+  width: 249px;
+}
+
+@media (max-width: 1024px) {
+  .Wrapper {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .Menu {
+    margin-left: 60px;
+  }
+}

@@ -1,0 +1,157 @@
+@import url('./stylesConstants.css');
+
+.Header {
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 500;
+}
+
+.Container {
+  display: flex;
+  align-items: center;
+  margin: 1px 38px;
+}
+
+.LogoBlack {
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.LogoWhite {
+  display: none;
+}
+
+.Line {
+  height: 30px;
+  width: 1px;
+  margin: 0 17px;
+  border: none;
+  border-left: 1px solid #c4c4c4;
+}
+
+.Title {
+  font-family: 'Gilroy';
+  color: rgba(17, 17, 17, 0.5);
+}
+
+.Navigation {
+  font-family: 'Gilroy';
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: auto;
+}
+
+.Link {
+  text-decoration: none;
+  color: var(--grey);
+  padding: 6px 16px;
+}
+
+.Link:last-child {
+  margin-right: 24px;
+}
+
+.Link:hover {
+  background-color: var(--hover-nav);
+  border-radius: 8px;
+}
+
+.DropDown:hover .DropDownMenu {
+  display: flex;
+}
+
+.DropDownMenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 220px;
+  width: 243px;
+  background-color: #fff;
+  border: 1px solid var(--hover-nav);
+  box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 14px 24px rgba(51, 51, 51, 0.12);
+  border-radius: 15px;
+  color: var(--black);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.DropDownMenuLink {
+  text-decoration: none;
+  font-weight: normal;
+  font-family: 'Gilroy';
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--black);
+  padding: 8px 16px;
+}
+
+.DropDownMenuLink:hover {
+  background-color: var(--hover-nav);
+}
+
+.RequestButton {
+  border: 1px solid var(--orange);
+  border-radius: 40px;
+  outline: none;
+  color: var(--orange);
+  background-color: var(--bgc);
+  font-family: 'Gilroy';
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.MenuButton {
+  display: none;
+}
+
+.MenuButtonWhite {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .RequestButton,
+  .Navigation {
+    display: none;
+  }
+
+  .MenuButton {
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .Header {
+    width: 100vw;
+    background-color: #000;
+  }
+
+  .Container {
+    margin: 13px 0px 0px 10px;
+  }
+
+  .Line,
+  .LogoBlack,
+  .Title,
+  .MenuButton {
+    display: none;
+  }
+
+  .LogoWhite {
+    display: flex;
+  }
+
+  .MenuButtonWhite {
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}

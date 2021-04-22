@@ -1,0 +1,127 @@
+@import url('./stylesConstants.css');
+
+.Calculator {
+  margin-top: 100px;
+  margin-bottom: 137px;
+}
+
+.Title {
+  font-family: 'Nekst-Black';
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 90%;
+  width: 753px;
+  color: var(--black);
+}
+
+.FormBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 44px;
+}
+
+.ResultsBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Results {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Result:first-child {
+  margin-right: 180px;
+}
+
+.ResultTitle {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--grey);
+  margin-bottom: 8px;
+}
+
+.ResultNumber {
+  font-family: 'Nekst-Black';
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 90%;
+  color: var(--grey);
+}
+
+.RequestButton {
+  border: none;
+  border-radius: 40px;
+  outline: none;
+  color: #fff;
+  background-color: var(--orange);
+  font-family: 'Nekst-Black';
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  padding: 14px 92.5px;
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .FormBlock {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ResultsBlock {
+    flex-direction: column;
+  }
+
+  .RequestButton {
+    margin-top: 44px;
+    height: 68px;
+    width: 345px;
+    padding: 14px 52px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Title {
+    font-size: 34px;
+    margin: 0;
+    padding: 0;
+    margin-top: 555px;
+    width: 279px;
+  }
+
+  .Results {
+    flex-direction: column;
+  }
+
+  .Result {
+    width: 167px;
+  }
+
+  .Result:first-child {
+    margin-bottom: 29px;
+  }
+
+  .Result:last-child {
+    margin-bottom: 32px;
+  }
+
+  .ResultTitle {
+    font-size: 14px;
+  }
+
+  .ResultNumber {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 20px;
+  }
+
+  .RequestButton {
+    width: 280px;
+    margin: 0;
+    padding: 16px 50px;
+    font-size: 22px;
+  }
+}
